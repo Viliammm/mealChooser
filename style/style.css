@@ -6,15 +6,23 @@
 
 h1{
 	font-size: 2.5rem;
+	color: #555;
 }
 
 button{
+	border: 3px solid #999;
 	border-radius: 1rem;
-	font-size: 1.5rem;
+	box-shadow: 3px 3px #666;
+	font-size: 1.4rem;
 	height: 5rem;
 	margin-top: 5rem;
 	outline: none;
 	width: 12rem;
+}
+
+button:hover{
+	box-shadow: 1px 1px #666;
+	padding: 3px 0 0 3px;
 }
 
 .container{
