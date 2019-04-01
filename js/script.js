@@ -17,7 +17,7 @@ var eatOut = [	"Bun Bo Nam Bo Dejvice",
 				"Burger King",
 			];
 
-var recipe = [	"Rybí prsty",
+var recipes = [	"Rybí prsty",
 				"Rybí filé",
 				"Pan Gasius",
 				"Bryndzové halušky",
@@ -44,10 +44,10 @@ var addBtn = document.querySelector(".adder");
 function choose(){
 	pickBtn.addEventListener("click", function(){
 			var x = Math.floor(Math.random()*(eatOut.length));
-			var y = Math.floor(Math.random()*(recipe.length));
+			var y = Math.floor(Math.random()*(recipes.length));
 			var cook = confirm("Do you want to cook something?");
 			if (cook === true) {
-				alert("Let's cook " + recipe[y]);
+				alert("Let's cook " + recipes[y]);
 			}
 			else{
 				alert("Then we're getting " + eatOut[x]);
@@ -57,13 +57,31 @@ function choose(){
 
 choose();
 
+
+
+
+// This is obviously not a permanent solution, as I will need to make a backend solution to be able to add permanent new options to the arrays
+
 function add(){
 	addBtn.addEventListener("click", function(){
 		var addRecipe = confirm("Do you want to add a recipe?");
+		
+		
 		if(addRecipe === true) {
-			prompt("What recipe are we adding?")
+			var newRecipe = prompt("What recipe are we adding?");
+			recipes.push(newRecipe);
+			alert(newRecipe + " added!");
 		}
-	})
+		else if(addRecipe === false) {
+			var addTakeOut = confirm("Do you want to add an take out option then?");
+			
+			if(addTakeOut === true) {
+				var newTakeOut = prompt("What take out are we adding?");
+				eatOut.push(newTakeOut);
+				alert(newTakeOut + " added!");
+			};
+		};
+	});
 }
 
 add();
