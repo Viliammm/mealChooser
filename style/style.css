@@ -13,9 +13,10 @@ button{
 	border: 3px solid #999;
 	border-radius: 1rem;
 	box-shadow: 3px 3px #666;
+	display: block;
 	font-size: 1.4rem;
 	height: 5rem;
-	margin-top: 5rem;
+	margin: 5rem auto 0;
 	outline: none;
 	width: 12rem;
 }
@@ -23,6 +24,15 @@ button{
 button:hover{
 	box-shadow: 1px 1px #666;
 	padding: 3px 0 0 3px;
+}
+
+footer{
+	padding-top: 10rem;
+}
+
+footer a{
+	color: #555;
+	text-decoration: none;
 }
 
 .container{
