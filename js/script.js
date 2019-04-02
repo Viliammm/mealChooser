@@ -49,10 +49,10 @@ function choose(){
 			var y = Math.floor(Math.random()*(recipes.length));
 			var cook = confirm("Do you want to cook something?");
 			if (cook === true) {
-				alert("Let's cook " + recipes[y]);
+				alert("We shall cook: \n" + recipes[y]);
 			}
 			else{
-				alert("Then we're getting " + eatOut[x]);
+				alert("Then we're getting food from: \n" + eatOut[x]);
 		}
 	});
 };
@@ -80,7 +80,7 @@ function add(){
 		
 		if(addRecipe === true) {
 			var newRecipe = prompt("What recipe are we adding?");
-			recipes.push(newRecipe);
+			recipes.push("\n" + newRecipe);
 			alert(newRecipe + " added!");
 		}
 		else if(addRecipe === false) {
@@ -88,7 +88,7 @@ function add(){
 			
 			if(addTakeOut === true) {
 				var newTakeOut = prompt("What take out are we adding?");
-				eatOut.push(newTakeOut);
+				eatOut.push("\n" + newTakeOut);
 				alert(newTakeOut + " added!");
 			};
 		};
@@ -106,19 +106,3 @@ function remove(){
 }
 
 remove();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
