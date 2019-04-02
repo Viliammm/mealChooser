@@ -14,11 +14,8 @@ button{
 	border-radius: 1rem;
 	box-shadow: 3px 3px #666;
 	display: block;
-	font-size: 1.4rem;
-	height: 5rem;
 	margin: 5rem auto 0;
 	outline: none;
-	width: 12rem;
 }
 
 button:hover{
@@ -35,8 +32,28 @@ footer a{
 	text-decoration: none;
 }
 
+.btnMain{
+	font-size: 1.4rem;
+	height: 5rem;
+	width: 12rem;
+}
+
+.btnSecondary{
+	display: inline-block;
+	font-size: 1.1rem; 
+	margin: 5rem 1.5rem 0;
+	width: 6rem;
+}
+
 .container{
 	margin: 0 auto;
 	text-align: center;
 	width: 80%;
+}
+
+.shower{
+	display: block;
+	font-size: 1.1rem; 
+	width: 9rem;
+	margin-top: 7rem;
 }
