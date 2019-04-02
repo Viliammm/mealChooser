@@ -39,7 +39,8 @@ var recipes = [	"\nRybí prsty",
 
 var pickBtn = document.querySelector(".picker");
 var addBtn = document.querySelector(".adder");
-var showBtn = document.querySelector(".shower")
+var showBtn = document.querySelector(".shower");
+var removeBtn = document.querySelector(".remover");
 
 
 function choose(){
@@ -95,3 +96,29 @@ function add(){
 }
 
 add();
+
+//I have to figure out the best way in which this should work, so it is not doing anything for now
+
+function remove(){
+	removeBtn.addEventListener("click", function(){
+		alert("REMOVING");
+	})
+}
+
+remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
