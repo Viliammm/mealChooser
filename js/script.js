@@ -1,44 +1,45 @@
-var eatOut = [	"Bun Bo Nam Bo Dejvice",
-				"Bun Bo Nam Bo Letná", 
-				"Bun Bo Nam Bo Anděl",
-				"Bun Bo Nam Bo Hradčanská",
-				"Čína", 
-				"Panda", 
-				"Fresh Point",
-				"360 Pizza",
-				"Bageterie",
-				"KFC",
-				"Kebab Hradčanská",
-				"Burrito Loco",
-				"Mexická restaurace Hradčanská",
-				"Potrefená Husa",
-				"McDonalds",
-				"Canttina",
-				"Burger King",
+var eatOut = [	"\nBun Bo Nam Bo Dejvice",
+				"\nBun Bo Nam Bo Letná", 
+				"\nBun Bo Nam Bo Anděl",
+				"\nBun Bo Nam Bo Hradčanská",
+				"\nČína", 
+				"\nPanda", 
+				"\nFresh Point",
+				"\n360 Pizza",
+				"\nBageterie",
+				"\nKFC",
+				"\nKebab Hradčanská",
+				"\nBurrito Loco",
+				"\nMexická restaurace Hradčanská",
+				"\nPotrefená Husa",
+				"\nMcDonalds",
+				"\nCanttina",
+				"\nBurger King",
 			];
 
-var recipes = [	"Rybí prsty",
-				"Rybí filé",
-				"Pan Gasius",
-				"Bryndzové halušky",
-				"Abomination",
-				"Standardní špagety",
-				"Špagety s párkem",
-				"Tagliatelle Carbonara",
-				"Pečené kuřecí křídla",
-				"Stroganoff",
-				"Rizoto",
-				"Plněná paprika",
-				"Těstoviny se sýrovo-smetanovou omáčkou",
-				"Hovězí s nudlemi a zeleninou",
-				"Kuřecí maso s ananasem",
-				"ŠPÍZY!",
-				"Tacossss",
+var recipes = [	"\nRybí prsty",
+				"\nRybí filé",
+				"\nPan Gasius",
+				"\nBryndzové halušky",
+				"\nAbomination",
+				"\nStandardní špagety",
+				"\nŠpagety s párkem",
+				"\nTagliatelle Carbonara",
+				"\nPečené kuřecí křídla",
+				"\nStroganoff",
+				"\nRizoto",
+				"\nPlněná paprika",
+				"\nTěstoviny se sýrovo-smetanovou omáčkou",
+				"\nHovězí s nudlemi a zeleninou",
+				"\nKuřecí maso s ananasem",
+				"\nŠPÍZY!",
+				"\nTacossss",
 
 			];
 
 var pickBtn = document.querySelector(".picker");
 var addBtn = document.querySelector(".adder");
+var showBtn = document.querySelector(".shower")
 
 
 function choose(){
@@ -57,6 +58,15 @@ function choose(){
 
 choose();
 
+//I would like this button to be more beautiful, maybe print the options on a website directly, but this will do for now
+function show(){
+	showBtn.addEventListener("click", function(){
+		alert("Our take out options are: \n" + eatOut);
+		alert("Or we can cook something from this \n" + recipes);
+	})
+};
+
+show();
 
 
 
