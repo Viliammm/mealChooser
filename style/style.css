@@ -1,12 +1,7 @@
 *{
-	font-family: Helvetica;
+	font-family: 'Quicksand', sans-serif;
 	font-weight: 100;
-	font-style: italic;	
-}
-
-h1{
-	font-size: 2.5rem;
-	color: #555;
+	user-select: none;
 }
 
 button{
@@ -14,6 +9,7 @@ button{
 	border-radius: 1rem;
 	box-shadow: 3px 3px #666;
 	display: block;
+	font-style: italic;	
 	margin: 5rem auto 0;
 	outline: none;
 }
@@ -24,7 +20,8 @@ button:hover{
 }
 
 footer{
-	padding-top: 10rem;
+	bottom: 0.5rem;
+	position: absolute;	
 }
 
 footer a{
@@ -32,17 +29,27 @@ footer a{
 	text-decoration: none;
 }
 
+footer a:hover{
+	font-style: italic;
+}
+
+h1{
+	font-size: 2.5rem;
+	font-style: italic;
+	color: #555;
+}
+
+.adder{
+	display: inline-block;
+	font-size: 1.1rem; 
+	margin: 5rem 1.5rem 1rem;
+	width: 6rem;
+}
+
 .btnMain{
 	font-size: 1.4rem;
 	height: 5rem;
 	width: 12rem;
-}
-
-.btnSecondary{
-	display: inline-block;
-	font-size: 1.1rem; 
-	margin: 5rem 1.5rem 0;
-	width: 6rem;
 }
 
 .container{
@@ -53,7 +60,9 @@ footer a{
 
 .shower{
 	display: block;
-	font-size: 1.1rem; 
-	width: 9rem;
+	font-size: 1.2rem; 
+	height: 4rem;
 	margin-top: 7rem;
+	width: 9rem;
+	
 }
