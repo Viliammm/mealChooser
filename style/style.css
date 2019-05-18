@@ -1,6 +1,5 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
 	user-select: none;
 }
 
@@ -25,6 +24,7 @@ button:hover{
 footer a{
 	color: #999;
 	text-decoration: none;	
+	font-weight: 100;
 }
 
 footer a:hover{
@@ -42,20 +42,20 @@ h1{
 	font-size: 1.4rem;
 	height: 5rem;
 	margin-bottom: 2rem;
-	width: 12rem;
+	width: 13rem;
 }
 
 .btnMiddle{
 	font-size: 1.2rem; 
 	height: 4rem;
 	margin-bottom: 2rem;
-	width: 9rem;
+	width: 10rem;
 }
 
 .btnSmall{
 	font-size: 1.1rem; 
 	margin-bottom: 2rem;
-	width: 6rem;
+	width: 7rem;
 }
 
 .container{
