@@ -63,7 +63,7 @@ h1{
 	margin: 0 auto;
 	text-align: center;
 	width: 90%;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 @media only screen and (min-width: 480px);
