@@ -20,13 +20,19 @@ button:hover{
 }
 
 footer{
+	background-color: #FFF;
 	bottom: 0.5rem;
-	position: absolute;	
+	width: 99%;
+	position: absolute;
+	padding-top: 2rem;
+
 }
 
 footer a{
 	color: #555;
+	margin: 0 auto;
 	text-decoration: none;
+	opacity: 0.5;
 }
 
 footer a:hover{
@@ -36,7 +42,7 @@ footer a:hover{
 h1{
 	font-size: 2.5rem;
 	font-style: italic;
-	color: #555;
+	color: red;
 }
 
 .adder{
@@ -55,7 +61,7 @@ h1{
 .container{
 	margin: 0 auto;
 	text-align: center;
-	width: 80%;
+	width: 500px;
 }
 
 .shower{
