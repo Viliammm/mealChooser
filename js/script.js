@@ -37,11 +37,9 @@ var recipes = [	"\nRybí prsty",
 
 			];
 
-var pickBtn = document.querySelector(".picker");
-var addBtn = document.querySelector(".adder");
-var showBtn = document.querySelector(".shower");
-var removeBtn = document.querySelector(".remover");
-
+var pickBtn = document.querySelector(".pick");
+var addBtn = document.querySelector(".add");
+var showBtn = document.querySelector(".show");
 
 function choose(){
 	pickBtn.addEventListener("click", function(){
@@ -96,13 +94,3 @@ function add(){
 }
 
 add();
-
-//I have to figure out the best way in which this should work, so it is not doing anything for now
-
-function remove(){
-	removeBtn.addEventListener("click", function(){
-		alert("REMOVING");
-	})
-}
-
-remove();
