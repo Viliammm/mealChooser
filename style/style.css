@@ -65,4 +65,21 @@ h1{
 	/*font-style: italic;*/
 }
 
-@media only screen and (min-width: 480px);
+@media only screen and (min-width: 768px){
+	h1{
+		margin-bottom: 4rem;
+	}
+
+	.btnLarge{
+		margin-bottom: 4rem;
+	}
+
+	.btnMiddle{
+		margin-bottom: 3.5rem;
+	}
+
+	.btnSmall{
+		margin-bottom: 4rem;
+	}
+}
+
